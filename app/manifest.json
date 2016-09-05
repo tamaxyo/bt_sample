@@ -1,0 +1,22 @@
+{
+  "manifest_version" : 2,
+  "name" : "bt scanner",
+  "description" : "scan bt devices around you",
+  "version" : "0.0.1",
+  
+  "icons" : {
+  },
+
+  "app" : {
+    "background" : {
+      "scripts" : ["js/background.js"]
+    }
+  }, 
+
+  "bluetooth" : {
+    "uuids" : ["180D",  "1809",  "180F"],
+    "low_energy" : true,
+    "peripheral" : true
+  }
+}
+
